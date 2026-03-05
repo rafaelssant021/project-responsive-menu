@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../img/foto-back-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.94);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body > *{
+    position: relative;
+    z-index: 1;
+}
+
+header{
+    text-align: center;
+    display: block;
+}
+
+menu > ul > li > a{
+    position: relative;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid gray;
+    transition: background-color 0.3s ease 0.1s, color 0.3s ease 0.1s;
+    color: white;
+}
+
+menu > ul > li > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.4s ease;
+}
+
+menu > ul > li > a:hover{
+    background-color: white;
+    color: black;
+}
+
+menu > ul > li > a:hover::after{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    padding: 40px;
+    text-shadow: 1px 1px 2px white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+p{
+    max-width: 64vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+main{
+    padding-bottom: 20px;
+}
+
+article{
+    padding-bottom: 30px;
+}
+
+footer{
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: clamp(1.9rem, 10vw, 2.6rem);
+        padding: 24px 12px;
+    }
+
+    p{
+        max-width: 88vw;
+        font-size: 0.95rem;
+        line-height: 1.45em;
+        padding-bottom: 12px;
+    }
+
+    footer{
+        padding: 24px 12px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    body{
+        background-image: url('img/foto-home-cllr.jpeg');
+        background-size: 108% auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: scroll;
+    }
+}

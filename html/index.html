@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendrick</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../style-all/style.css" media="all">
+    <link rel="stylesheet" href="../style-retrato/cllr-home.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="../style-paissagem/paissagem-home.css" media="screen and (orientation: landscape)">
+</head>
+<body>
+    <header>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li> <a href="gnx.html">GNX</a></li>
+                <li> <a href="damn.html">DAMN.</a></li>
+                <li> <a href="to-pimp.html">To pimp a butterfly</a></li>
+                <li> <a href="good-kid.html">good kid, m.A.A.d city</a></li>
+                <li> <a href="mr-morale.html">Mr Morale & The Big Steppers</a></li>
+                <li> <a href="index.html">Home</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Kendrick Lamar</h1>
+            <p>Kendrick Lamar é um rapper, compositor e produtor norte-americano, considerado um dos artistas mais influentes do hip-hop moderno. Nascido em Compton, Califórnia, ele ficou conhecido por suas letras profundas, que abordam temas como racismo, desigualdade social, violência, espiritualidade, fama e conflitos internos.
+            Ao longo da carreira, Kendrick se destacou por transformar experiências pessoais em narrativas poderosas, misturando crítica social com inovação musical. Seu trabalho já rendeu diversos prêmios, incluindo um Pulitzer de Música — algo raro no rap — consolidando seu nome como um dos maiores artistas da sua geração.</p>
+        </article>
+        <img class="home-artist-img" src="../img/Kendrick-Lamar-PNG.png" alt="">
+    </main>
+    <footer>
+        <p>© Rafael Santos</p>
+    </footer>
+    <script>
+        function clickMenu(){
+           if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+           } else {
+                itens.style.display = 'block'
+           }
+           const menu = document.getElementById('itens')
+           menu.classList.toggle('aberto')
+        }
+    </script>
+</body>
+</html>

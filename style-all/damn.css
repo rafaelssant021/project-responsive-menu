@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --scroll-darkness: 0.60;
+}
+body{
+    background-image: url('../img/foto-back-damn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, var(--scroll-darkness));
+    pointer-events: none;
+    z-index: 0;
+}
+body > *{
+    position: relative;
+    z-index: 1;
+}
+header{
+    text-align: center;
+    display: block;
+}
+menu > ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 10px;
+}
+menu > ul > li > a{
+    position: relative;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid red;
+    color: white;
+    transition: background-color 0.3s ease 0.1s, color 0.3s ease 0.1s;
+}
+menu > ul > li > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s ease;
+}
+menu > ul > li > a:hover{
+    background-color: white;
+    color: red;
+}
+menu > ul > li > a:hover::after{
+    width: 100%;
+}
+h1{
+    color: red;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 70px;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 30px;
+    line-height: 1.5em;
+}
+h3{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    
+    padding-top: 30px;
+}
+footer{
+    padding: 40px;
+}
+
+@keyframes mov {
+    from{
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+img {
+    animation: mov 1s ease-in-out 1;
+}
+h1 {
+    animation: mov 1s ease-in-out 1;
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: clamp(2.1rem, 11vw, 3rem);
+        padding-top: 28px;
+        padding-bottom: 14px;
+    }
+
+    p{
+        width: 88vw;
+        margin: 0 auto;
+        font-size: 0.95rem;
+        padding-top: 18px;
+        line-height: 1.45em;
+    }
+
+    h3{
+        width: 88vw;
+        margin: 0 auto;
+        font-size: clamp(1.25rem, 6vw, 1.7rem);
+        padding-top: 18px;
+    }
+
+    img{
+        width: min(88vw, 420px);
+        height: auto;
+    }
+
+    footer{
+        padding: 24px 12px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    body{
+        background-image: none;
+    }
+
+    body::before{
+        background:
+            linear-gradient(rgba(0, 0, 0, var(--scroll-darkness)), rgba(0, 0, 0, var(--scroll-darkness))),
+            url('../img/foto-damn-cllr.jpg');
+        background-size: 108% auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}

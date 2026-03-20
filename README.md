@@ -1,19 +1,37 @@
-Projeto front-end que apresenta um menu responsivo para navegação entre páginas dedicadas aos álbuns do Kendrick Lamar. O objetivo é praticar HTML e CSS, organização de layout e responsividade.
+# Responsive Menu
 
-Demonstração
+Acesse o projeto: https://rafaelssant021.github.io/project-responsive-menu/
 
-O projeto consiste em uma página inicial com um menu que direciona para páginas individuais de cada álbum, cada uma com seu próprio estilo visual.
+## Sobre
+Este projeto consiste na criação de um menu de navegação responsivo, adaptável a diferentes tamanhos de tela.
 
-Funcionalidades
+O objetivo foi desenvolver um menu do tipo "hambúrguer", muito utilizado em dispositivos móveis, utilizando HTML, CSS e JavaScript.
 
-Menu responsivo para celular e telas maiores Navegação entre páginas dos álbuns Estilização personalizada para cada álbum Organização de arquivos por páginas e estilos
+---
 
-Tecnologias utilizadas
+## Tecnologias utilizadas
+- HTML5
+- CSS3
+- JavaScript
 
-HTML5 CSS3 JavaScript
+---
 
-Objetivo do projeto
+## Funcionalidades
+- Menu responsivo para mobile e desktop
+- Botão hambúrguer para telas menores
+- Animação de abertura e fechamento
+- Navegação simples e intuitiva
 
-Este projeto foi desenvolvido com foco em: Praticar criação de layouts responsivos Melhorar organização de arquivos front-end Trabalhar navegação entre páginas
+---
 
-🔗 Deploy: https://rafaelssant021.github.io/project-responsive-menu/
+
+## O que eu pratiquei neste projeto
+- Uso de Media Queries para responsividade
+- Manipulação do DOM com JavaScript
+- Criação de menu colapsável (toggle)
+- Organização de layout adaptável
+
+---
+
+## Como funciona
+O menu altera seu comportamento de acordo com o tamanho da tela, exibindo um botão hambúrguer em dispositivos menores, padrão comum em interfaces modernas para melhorar a navegação mobile.

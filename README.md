@@ -1,4 +1,4 @@
-# Responsive Menu
+# Discografia Kendrick
 
 Acesse o projeto: https://rafaelssant021.github.io/project-responsive-menu/
 
